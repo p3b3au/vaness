@@ -14,7 +14,7 @@
 body{
     max-width: 1400px;
     margin: auto;
-    background-color: var(--main-gray);
+    background-color: var(--main-gold);
     color: var(--main-white);
     font-size: 24px;
     font-family: "MyPerpetua",serif;
