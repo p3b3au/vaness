@@ -1,9 +1,11 @@
+/* GENERALITE */
+
 :root {
---main-white: whitesmoke;
---main-green: #065134;
---main-blue: #45567d;
---main-gray: #303841;
---main-gold: yellow;
+    --main-white: whitesmoke;
+    --main-green: #065134;
+    --main-blue: #45567d;
+    --main-grey: #303841;
+    --main-gold: yellow;
 }
 
 @font-face {
@@ -11,28 +13,34 @@
     src: url(perpetua.ttf);
 }
 
-body{
+body {
     max-width: 1400px;
     margin: auto;
-    background-color: var(--main-green);
+    background-color: var(--main-grey);
     color: var(--main-white);
     font-size: 24px;
-    font-family: "MyPerpetua",serif;
+    font-family: "MyPerpetua", serif;
+}
+
+header{
+    display:flex
 }
 
 h1, h2 {
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#page{
+#page {
     display: flex;
-   }
+}
 
 /*  menu à droite  */
-aside{
+aside {
     margin-left: 10px;
     min-width: 250px;
-    height: 500px;
+    height: 95vh;
+    position: sticky;
+    top: 0;
     background-color: var(--main-green);
     align-content: center;
     border-left-width: 2px;
@@ -40,14 +48,73 @@ aside{
     border-left-color: var(--main-gold);
 }
 
-nav{
+nav, #menuBurger {
     display: flex;
     flex-direction: column;
 }
-nav a{
-        color: var(--main-white);
-        
-        text-decoration: none;
-        margin: 20px;
+
+aside a {
+    color: var(--main-white);
+    text-decoration: none;
+    margin: 20px;
 }
 
+/* aside>nav {
+    display: none
+} */
+
+
+/* burger */
+
+#burger{
+display: none;
+padding: 12px;
+}
+
+#burger a{
+      color: var(--main-white);
+      
+}
+#burger i{
+font-size:1.5em; 
+}
+
+#menuBurger {
+    display: none;
+    margin-left: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 90vw;
+    background-color: var(--main-green);
+    align-content: center;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: var(--main-gold);
+}
+#menuBurger a {
+    color: var(--main-white);
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+#menuBurger:target {
+    display: flex
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    aside {
+        display: none;
+    }
+    #burger{
+        display: block;
+    
+  
+    }
+
+    
+
+}
