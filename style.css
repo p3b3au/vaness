@@ -13,21 +13,43 @@
     src: url(perpetua.ttf);
 }
 
+@font-face {
+    font-family: "MySavoye";
+    src: url(savoye.ttf);
+}
+
+@font-face {
+    font-family: "MyPapyrus";
+    src: url(papyrus.ttf);
+}
+
+@font-face {
+    font-family: "MySav";
+    src: url(SavoyeLET.ttf);
+}
+
+@font-face {
+    font-family: "MyZap";
+    src: url(Zapfino.ttf);
+}
+
 body {
     max-width: 1400px;
     margin: auto;
     background-color: var(--main-grey);
     color: var(--main-white);
     font-size: 24px;
-    font-family: "MyPerpetua", serif;
+    font-family: "MyPapyrus";
+
 }
 
-header{
-    display:flex
+header {
+    display: flex
 }
 
 h1, h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "MyZap";
+    font-size: 24px;
 }
 
 #page {
@@ -66,17 +88,18 @@ aside a {
 
 /* burger */
 
-#burger{
-display: none;
-padding: 12px;
+#burger {
+    display: none;
+    padding: 12px;
 }
 
-#burger a{
-      color: var(--main-white);
-      
+#burger a {
+    color: var(--main-white);
+
 }
-#burger i{
-font-size:1.5em; 
+
+#burger i {
+    font-size: 1.5em;
 }
 
 #menuBurger {
@@ -92,6 +115,7 @@ font-size:1.5em;
     border-left-style: solid;
     border-left-color: var(--main-gold);
 }
+
 #menuBurger a {
     color: var(--main-white);
     text-decoration: none;
@@ -109,12 +133,14 @@ font-size:1.5em;
     aside {
         display: none;
     }
-    #burger{
+
+    #burger {
         display: block;
-    
-  
     }
 
-    
+    body {
+        margin: 2px
+    }
+
 
 }
