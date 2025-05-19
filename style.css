@@ -218,8 +218,9 @@ width: 180px;
     color: black;
 }
 
-#burger i {
+#burger img {
     font-size: 1.5em;
+    width: 39px;
 }
 
 #menuBurger {
