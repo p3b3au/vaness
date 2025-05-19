@@ -2,7 +2,7 @@
 
 :root {
     --main-white: whitesmoke;
-    --main-yellow: rgb(230, 189, 53);
+    --main-aside: rgb(197, 217, 96);
     --main-blue: #45567d;
     --main-grey: #303841;
     --main-gold: yellow;
@@ -157,7 +157,7 @@ aside {
     top: 0;
     align-content: center;
     padding-right: 24px;
-    background-color: var(--main-yellow);
+    background-color: var(--main-aside);
 
     /* background: linear-gradient(.25turn, var(--main-yellow) 70%, var(--main-gold)); */
     /* background: linear-gradient(to right, transparent, white), url("img/AArbreZZ12.jpg");
