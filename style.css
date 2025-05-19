@@ -79,7 +79,7 @@ h2 {
 /* LEFT */
 
 main {
-    padding: 8px 0px 8px 8px;
+    padding: 8px;
 }
 
 #left {
@@ -114,13 +114,11 @@ main {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 72px;
+ margin-top: 72px;
 }
 
 footer a {
@@ -128,15 +126,29 @@ footer a {
     text-decoration: none;
 }
 
+#footerSeparator{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+footer img{
+height: 1px;
+width: 80%;
+}
+
+#footerContacts{
+       text-align: center;
+}
+
+
 /*  menu à droite  */
 aside {
-    min-width: 250px;
+    min-width: 220px;
     height: 100vh;
     position: sticky;
     top: 0;
     align-content: center;
-    padding-right: 36px;
-
+    padding-right: 24px;
     background-color: var(--main-yellow);
 
     /* background: linear-gradient(.25turn, var(--main-yellow) 70%, var(--main-gold)); */
@@ -151,14 +163,13 @@ aside {
 
 #separator {
     width: 5px;
-    margin-left: 10px;
     background-image: url(img/AArbreZZ4.jpg);
     background-size: cover;
     overflow: hidden;
 }
 
 #links {
-    margin-top: 36px;
+    margin-top: 72px;
 }
 
 nav, #menuBurger {
@@ -175,10 +186,13 @@ aside a {
     border-bottom-style: none;
 }
 
-.thisPage {
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--main-grey)
+
+.thisPage::after{
+content: "";
+display: block;
+background: url(img/AArbreZZ2.jpg);
+height: 1px;
+width: 180px;
 }
 
 
@@ -187,6 +201,9 @@ aside a {
 #burger {
     display: none;
     padding: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #burger a {
@@ -203,12 +220,13 @@ aside a {
     position: fixed;
     top: 0;
     right: 0;
-    width: 90vw;
-    background-color: var(--main-green);
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--main-yellow);
     align-content: center;
     border-left-width: 2px;
     border-left-style: solid;
-    border-left-color: var(--main-gold);
+    border-left-color: var(--main-grey);
 }
 
 #menuBurger a {
@@ -218,10 +236,26 @@ aside a {
     font-size: 1.5em;
 }
 
+#close{
+    padding: 12px;
+    margin: 0px !important;    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 #menuBurger:target {
     display: flex
 }
 
+
+/* HAVER */
+
+a:hover{
+
+text-shadow: 1px 1px 1px var(--main-grey);
+}
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
@@ -234,9 +268,41 @@ aside a {
     }
 
     body {
-        margin: 2px
+        margin: 2px;
+    }
+
+    #page, .textImg, #banner, footer{
+        flex-wrap: wrap;
+    }
+
+    .illustration{
+        width : auto
+    }
+
+    .text{
+        padding: 0px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    #banner {
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #logo img {
+        margin: 0;
+    }
+
+    .textImg{
+        justify-content: center;
+        margin: 0;
     }
 
 }
 
-/* hover */
