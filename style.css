@@ -2,10 +2,12 @@
 
 :root {
     --main-white: whitesmoke;
-    --main-aside: rgb(197, 217, 96);
+    --main-aside: rgb(217, 183, 96);
     --main-blue: #45567d;
     --main-grey: #303841;
     --main-gold: yellow;
+
+    --opacity: 0.2
 }
 
 @font-face {
@@ -46,17 +48,21 @@ html {
 }
 
 body {
-    max-width: 1400px;
-    margin: auto;
+    margin: 0;
     color: black;
     font-size: 24px;
     font-family: "MyPerpetua";
 }
 
+main {
+    padding: 8px;
+}
+
 header {
-    margin-left: 45px;
+    margin-left: 9%;
+    margin-bottom: 36px;
     display: flex;
-    justify-content: space-between;
+
 }
 
 #banner {
@@ -66,6 +72,7 @@ header {
 h1, h2 {
     font-family: "MyPapyrus";
     font-weight: bold;
+    margin-bottom: 45px;
 }
 
 h2 {
@@ -74,16 +81,15 @@ h2 {
 
 #page {
     display: flex;
+  
 }
 
 /* LEFT */
 
-main {
-    padding: 8px;
-}
 
 #left {
-    min-height: 95vh;
+
+    margin: 0px 0px 0px 12%;
 }
 
 .textImg {
@@ -151,22 +157,33 @@ width: 80%;
 
 /*  menu à droite  */
 aside {
-    min-width: 220px;
     height: 100vh;
     position: sticky;
     top: 0;
     align-content: center;
-    padding-right: 24px;
-    background-color: var(--main-aside);
+    padding-right: 45px;
 
-    /* background: linear-gradient(.25turn, var(--main-yellow) 70%, var(--main-gold)); */
-    /* background: linear-gradient(to right, transparent, white), url("img/AArbreZZ12.jpg");
+}
+
+aside:before{
+    /* A pseudo element is created before outer_cont that will display the background image and its position property is set to absolute */
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("img/AArbreVert2.jpg");
+    opacity: var(--opacity);
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden; */
+    z-index: 1;
+}
 
-    /* border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: black; */
+
+nav>* {
+    z-index: 5;
 }
 
 #separator {
@@ -229,14 +246,15 @@ width: 180px;
     position: fixed;
     top: 0;
     right: 0;
-    width: 70vw;
+    width: 90vw;
     height: 100vh;
-    background-color: var(--main-aside);
     align-content: center;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: var(--main-grey);
+    background-color:var(--main-aside);
 }
+
 
 #menuBurger a {
     color: black;
@@ -258,11 +276,19 @@ width: 180px;
 }
 
 
-/* HAVER */
+/* HOVER */
 
 a:hover{
-text-shadow: 1px 1px 1px var(--main-grey);
+font-weight: bold;
 }
+nav> a:hover:after{
+content: "";
+display: block;
+background: url(img/AArbreZZ2.jpg);
+height: 2px;
+width: 180px;
+}
+
 
 /* RESPONSIVE */
 
@@ -277,6 +303,9 @@ text-shadow: 1px 1px 1px var(--main-grey);
 
     body {
         margin: 2px;
+    }
+    #left{
+        margin: 0;
     }
 
     #page, .textImg, #banner, footer{
