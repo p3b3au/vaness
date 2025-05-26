@@ -85,7 +85,6 @@ h2 {
 
 /* LEFT */
 
-
 #left {
     margin: 0px 0px 0px 12%;
 }
@@ -155,7 +154,7 @@ width: 80%;
 
 /*  menu à droite  */
 aside {
-    min-width: 18%;
+    min-width:21%;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -194,6 +193,10 @@ nav>* {
 
 #links {
     margin-top: 72px;
+    font-size: 18px;
+}
+#links:last-child{
+    
 }
 
 nav, #menuBurger {
