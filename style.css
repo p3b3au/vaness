@@ -195,9 +195,7 @@ nav>* {
     margin-top: 72px;
     font-size: 18px;
 }
-#links:last-child{
-    
-}
+
 
 nav, #menuBurger {
     display: flex;
@@ -296,7 +294,28 @@ width: 180px;
 }
 
 
+/* DARK MODE */
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+  a{
+        color: white !important;
+  }
+  #burger img, #separator, #footerSeparator, nav> a:hover:after, .thisPage::after{
+filter: invert(0.6);
+  }
+
+  #menuBurger{
+    background-color: #434343;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  
+}
 
 
 /* RESPONSIVE */
