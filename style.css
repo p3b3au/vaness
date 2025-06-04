@@ -82,14 +82,14 @@ h1, h2 {
 
 h2 {
     text-align: center;
+    font-size: 1.17em;
+    
 }
 
 h3{
-        font-family: "MyPapyrus";
-    font-weight: bold;
-    text-align: right;
-    margin-top: 60px;
-    padding-right: 18px;
+    font-weight: normal;
+    font-size: 20px ;
+    text-indent: 1em;
 }
 
 #page {
@@ -119,7 +119,8 @@ h3{
 
 .illustration {
     width: 60%;
-        padding: 9px;
+    padding: 9px;
+    align-content: center;
 }
 
 .text {
