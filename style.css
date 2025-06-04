@@ -385,6 +385,9 @@ filter: invert(0.6);
     .illustration{
         width : auto
     }
+    .hideResponsive{
+        display: none;
+    }
 
     .text{
         padding: 0px;
