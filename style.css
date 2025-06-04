@@ -107,21 +107,23 @@ h3{
     display: flex;
     justify-content: space-around;
     margin-top: 72px;
+
 }
 
 .textImg img {
     height: 300px;
     border-radius: 1%;
     border: solid 3px var(--main-grey) ;
-        padding-right: 18px;
+
 }
 
 .illustration {
     width: 60%;
+        padding: 9px;
 }
 
 .text {
-    padding: 18px 18px 18px 18px;
+    padding: 9px;
     align-content: center;  
 }
 
@@ -144,6 +146,7 @@ h3{
         text-align: justify;
 }
 
+/* CITATION */
 .quotation{
         text-indent: 1em;
         margin-top: 72px;
