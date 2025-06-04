@@ -1,4 +1,4 @@
-#burger *, nav *{
+#burger *, nav * {
     display: none;
 }
 
@@ -83,18 +83,17 @@ h1, h2 {
 h2 {
     text-align: center;
     font-size: 1.17em;
-    
 }
 
-h3{
+h3 {
     font-weight: normal;
-    font-size: 20px ;
+    font-size: 20px;
     text-indent: 1em;
 }
 
 #page {
     display: flex;
-  
+
 }
 
 /* LEFT */
@@ -113,8 +112,7 @@ h3{
 .textImg img {
     height: 300px;
     border-radius: 1%;
-    border: solid 3px var(--main-grey) ;
-
+    border: solid 3px var(--main-grey);
 }
 
 .illustration {
@@ -125,7 +123,7 @@ h3{
 
 .text {
     padding: 9px;
-    align-content: center;  
+    align-content: center;
 }
 
 .textImg p {
@@ -140,34 +138,34 @@ h3{
     margin-right: 50px;
 }
 
-.textSolo{
-        text-indent: 1em;
+.textSolo {
+    text-indent: 1em;
     margin-top: 72px;
-        padding-right: 18px;
-        text-align: justify;
+    padding-right: 18px;
+    text-align: justify;
 }
 
 /* CITATION */
-.quotation{
-        text-indent: 1em;
-        margin-top: 72px;
-display: block;
+.quotation {
+    text-indent: 1em;
+    margin-top: 72px;
+    display: block;
 }
 
-.quot{
+.quot {
     font-style: italic;
 }
 
-.author{
-text-align: right;
-padding-right: 12px;
-font-weight: bold;
+.author {
+    text-align: right;
+    padding-right: 12px;
+    font-weight: bold;
 }
 
 /* FOOTER */
 
 footer {
- margin-top: 72px;
+    margin-top: 72px;
 }
 
 footer a {
@@ -176,17 +174,17 @@ footer a {
 
 }
 
-#footerSeparator{
+#footerSeparator {
     text-align: center;
     margin-bottom: 12px;
 }
 
-footer img{
-height: 1px;
-width: 80%;
+footer img {
+    height: 1px;
+    width: 80%;
 }
 
-#footerContacts{
+#footerContacts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -196,7 +194,7 @@ width: 80%;
 
 /*  menu à droite  */
 aside {
-    min-width:21%;
+    min-width: 21%;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -205,7 +203,7 @@ aside {
 
 }
 
-aside:before{
+aside:before {
     /* A pseudo element is created before outer_cont that will display the background image and its position property is set to absolute */
     content: " ";
     display: block;
@@ -254,31 +252,33 @@ aside a {
 }
 
 /* THIS PAGE */
-nav>a::after{
-content: "";
-display: block;
-height: 2px;
-width: 180px;
+nav>a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 180px;
 }
 
-.thisPage::after{
+.thisPage::after {
     background: url(img/AArbreZZ2.jpg);
 }
-.thisPage{
+
+.thisPage {
     font-weight: bold;
 }
 
 /* HOVER */
 
-a:hover{
-font-weight: bold;
+a:hover {
+    font-weight: bold;
 }
-nav> a:hover:after{
-content: "";
-display: block;
-background: url(img/AArbreZZ2.jpg);
-height: 2px;
-width: 180px;
+
+nav>a:hover:after {
+    content: "";
+    display: block;
+    background: url(img/AArbreZZ2.jpg);
+    height: 2px;
+    width: 180px;
 }
 
 /* burger */
@@ -312,7 +312,7 @@ width: 180px;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: var(--main-grey);
-    background-color:var(--main-aside);
+    background-color: var(--main-aside);
 }
 
 
@@ -323,9 +323,9 @@ width: 180px;
     font-size: 1.5em;
 }
 
-#close{
+#close {
     padding: 12px;
-    margin: 0px !important;    
+    margin: 0px !important;
     position: absolute;
     top: 0;
     right: 0;
@@ -339,25 +339,25 @@ width: 180px;
 /* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background: #333;
-    color: white;
-  }
-  a{
+    body {
+        background: #333;
+        color: white;
+    }
+
+    a {
         color: white !important;
-  }
-  #burger img, #separator, #footerSeparator, nav> a:hover:after, .thisPage::after{
-filter: invert(0.6);
-  }
+    }
 
-  #menuBurger{
-    background-color: #434343;
-  }
+    #burger img, #separator, #footerSeparator, nav>a:hover:after, .thisPage::after {
+        filter: invert(0.6);
+    }
+
+    #menuBurger {
+        background-color: #434343;
+    }
 }
 
-@media (prefers-color-scheme: light) {
-  
-}
+@media (prefers-color-scheme: light) {}
 
 
 /* RESPONSIVE */
@@ -374,22 +374,24 @@ filter: invert(0.6);
     body {
         margin: 2px;
     }
-    #left{
+
+    #left {
         margin: 0;
     }
 
-    #page, .textImg, #banner, footer{
+    #page, .textImg, #banner, footer {
         flex-wrap: wrap;
     }
 
-    .illustration{
-        width : auto
+    .illustration {
+        width: auto
     }
-    .hideResponsive{
+
+    .hideResponsive {
         display: none;
     }
 
-    .text{
+    .text {
         padding: 0px;
     }
 
@@ -409,14 +411,13 @@ filter: invert(0.6);
         margin: 0;
     }
 
-    .textImg{
+    .textImg {
         justify-content: center;
         margin: 0;
     }
 
-    footer a{
+    footer a {
         margin-bottom: 8px;
     }
 
 }
-
