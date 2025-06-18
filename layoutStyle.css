@@ -144,7 +144,7 @@ aside:before {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("img/AArbreVert2.jpg");
+    background-image: url("img/navArbre.jpg");
     opacity: var(--opacity);
     width: 100%;
     height: inherit;
@@ -160,7 +160,7 @@ nav>* {
 
 #separator {
     width: 5px;
-    background-image: url(img/AArbreZZ4.jpg);
+    background-image: url(img/sepArbreVertic.jpg);
     background-size: cover;
     overflow: hidden;
 }
@@ -194,7 +194,7 @@ nav>a::after {
 }
 
 [aria-current]::after {
-    background: url(img/AArbreZZ2.jpg);
+    background: url(img/sepArbreHoriz.jpg);
 }
 
 [aria-current] {
@@ -210,7 +210,7 @@ a:hover {
 nav>a:hover:after {
     content: "";
     display: block;
-    background: url(img/AArbreZZ2.jpg);
+    background: url(img/sepArbreHoriz.jpg);
     height: 2px;
     width: 180px;
 }
@@ -282,7 +282,7 @@ nav>a:hover:after {
         color: white !important;
     }
 
-    #burger img, #separator, #footerSeparator, nav>a:hover:after, .thisPage::after {
+    #burger img, #separator, #footerSeparator, nav>a:hover:after, [aria-current]::after {
         filter: invert(0.6);
     }
 
