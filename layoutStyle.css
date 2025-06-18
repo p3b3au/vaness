@@ -1,8 +1,8 @@
-#burger *, nav * {
-    display: none;
+@import url(styleIndex.css);
+
+#links{
+    display: none
 }
-
-
 
 /* GENERALITE */
 
@@ -12,7 +12,6 @@
     --main-blue: #45567d;
     --main-grey: #303841;
     --main-gold: yellow;
-
     --opacity: 0.2
 }
 
@@ -21,30 +20,12 @@
     src: url(font/perpetua.ttf);
 }
 
-@font-face {
-    font-family: "MySavoye";
-    src: url(font/savoye.ttf);
-}
 
 @font-face {
     font-family: "MyPapyrus";
     src: url(font/papyrus.ttf);
 }
 
-@font-face {
-    font-family: "MySav";
-    src: url(font/SavoyeLET.ttf);
-}
-
-@font-face {
-    font-family: "MyZap";
-    src: url(font/Zapfino.ttf);
-}
-
-@font-face {
-    font-family: "MyAllura";
-    src: url(font/Allura-Regular.ttf);
-}
 
 
 /* LAYOUT */
@@ -85,7 +66,7 @@ h2 {
     font-size: 1.17em;
 }
 
-h3 {
+h3, h4 {
     font-weight: normal;
     font-size: 20px;
     text-indent: 1em;
@@ -96,54 +77,7 @@ h3 {
 
 }
 
-/* LEFT */
 
-#left {
-    margin: 0px 0px 0px 12%;
-}
-
-.textImg {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 72px;
-
-}
-
-.textImg img {
-    height: 300px;
-    border-radius: 1%;
-    border: solid 3px var(--main-grey);
-}
-
-.illustration {
-    width: 60%;
-    padding: 9px;
-    align-content: center;
-}
-
-.text {
-    padding: 9px;
-    align-content: center;
-}
-
-.textImg p {
-    text-align: justify;
-    text-indent: 1em;
-}
-
-#logo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.textSolo {
-    text-indent: 1em;
-    margin-top: 72px;
-    padding-right: 18px;
-    text-align: justify;
-}
 
 /* CITATION */
 .quotation {
@@ -251,7 +185,7 @@ aside a {
     border-bottom-style: none;
 }
 
-/* THIS PAGE */
+/* [aria-current] */
 nav>a::after {
     content: "";
     display: block;
@@ -259,11 +193,11 @@ nav>a::after {
     width: 180px;
 }
 
-.thisPage::after {
+[aria-current]::after {
     background: url(img/AArbreZZ2.jpg);
 }
 
-.thisPage {
+[aria-current] {
     font-weight: bold;
 }
 
