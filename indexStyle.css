@@ -1,9 +1,6 @@
 @import url(layoutStyle.css);
 
 
-h3{
-display: none
-}
 
 /* LEFT */
 
@@ -38,13 +35,6 @@ display: none
 .textImg p {
     text-align: justify;
     text-indent: 1em;
-}
-
-#logo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-right: 50px;
 }
 
 .textSolo {

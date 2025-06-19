@@ -47,13 +47,29 @@ main {
 
 header {
     margin-left: 9%;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     display: flex;
 }
 
 #banner {
     display: flex;
 }
+
+#logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+/* H */
+
+h3{
+    padding-top: 12px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
 
 h1, h2 {
     font-family: "MyPapyrus";
@@ -66,7 +82,7 @@ h2 {
     font-size: 1.17em;
 }
 
-h3, h4 {
+h4 {
     font-weight: normal;
     font-size: 20px;
     text-indent: 1em;
@@ -197,9 +213,9 @@ nav>a::after {
     background: url(img/sepArbreHoriz.jpg);
 }
 
-[aria-current] {
+/* [aria-current] {
     font-weight: bold;
-}
+} */
 
 /* HOVER */
 

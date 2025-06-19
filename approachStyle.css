@@ -1,0 +1,77 @@
+@import url(layoutStyle.css);
+
+/* H */
+h4{
+    text-decoration: underline;
+}
+
+
+/* LEFT */
+
+
+#left {
+    margin: 0px 0px 0px 12%;
+}
+
+.textImg {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+
+}
+
+.textImg img {
+    height: 550px;
+    border-radius: 1%;
+    border: solid 3px var(--main-grey);
+}
+
+.illustration {
+
+    padding: 9px;
+    align-content: center;
+}
+
+.text {
+width: inherit;
+    padding: 9px;
+    align-content: center;
+}
+
+.textImg p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.textSolo {
+    text-indent: 1em;
+    margin-top: 72px;
+    padding-right: 18px;
+    text-align: justify;
+}
+
+.textSolo p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+
+/* MENU */
+
+aside:before {
+    /* A pseudo element is created before outer_cont that will display the background image and its position property is set to absolute */
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("img/Hockney.jpg");
+    opacity: var(--opacity);
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
