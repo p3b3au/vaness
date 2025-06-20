@@ -4,6 +4,10 @@
     display: none
 }
 
+/* guillemets 
+«&nbsp
+&nbsp» 
+*/
 /* GENERALITE */
 
 :root {
@@ -64,13 +68,6 @@ header {
 
 /* H */
 
-h3{
-    padding-top: 12px;
-    font-size: 26px;
-    font-weight: normal;
-}
-
-
 h1, h2 {
     font-family: "MyPapyrus";
     font-weight: bold;
@@ -82,10 +79,21 @@ h2 {
     font-size: 1.17em;
 }
 
+h3{
+    padding-top: 12px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
 h4 {
     font-weight: normal;
     font-size: 20px;
     text-indent: 1em;
+    margin: 0 0 6px 0;
+}
+
+p{
+    margin-top: 9px;
 }
 
 #page {
@@ -129,9 +137,13 @@ footer a {
     margin-bottom: 12px;
 }
 
-footer img {
+#footerSeparator img{
     height: 1px;
     width: 80%;
+}
+
+footer img{
+    width: 13px;
 }
 
 #footerContacts {
@@ -298,7 +310,7 @@ nav>a:hover:after {
         color: white !important;
     }
 
-    #burger img, #separator, #footerSeparator, nav>a:hover:after, [aria-current]::after {
+    #burger img, #footerContacts img, #separator, #footerSeparator, nav>a:hover:after, [aria-current]::after {
         filter: invert(0.6);
     }
 
@@ -326,7 +338,7 @@ nav>a:hover:after {
     }
 
     #left {
-        margin: 0;
+        margin: 0 !important;
     }
 
     #page, .textImg, #banner, footer {
