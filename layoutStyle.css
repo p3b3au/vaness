@@ -1,4 +1,4 @@
-@import url(styleIndex.css);
+
 
 #links{
     display: none
@@ -90,6 +90,12 @@ h4 {
     font-size: 20px;
     text-indent: 1em;
     margin: 0 0 6px 0;
+}
+h5 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    text-decoration: underline;
 }
 
 p{
@@ -218,7 +224,7 @@ nav>a::after {
     content: "";
     display: block;
     height: 2px;
-    width: 180px;
+    width: 290px;
 }
 
 [aria-current]::after {
@@ -240,7 +246,7 @@ nav>a:hover:after {
     display: block;
     background: url(img/sepArbreHoriz.jpg);
     height: 2px;
-    width: 180px;
+    width: 290px;
 }
 
 /* burger */
@@ -317,6 +323,7 @@ nav>a:hover:after {
     #menuBurger {
         background-color: #434343;
     }
+    
 }
 
 @media (prefers-color-scheme: light) {}

@@ -1,0 +1,105 @@
+@import url(layoutStyle.css);
+
+/* h */
+h4{
+    font-weight: bold;
+    text-indent: 0;
+}
+
+
+/* LEFT */
+
+#left {
+    margin: 0px 0px 0px 12%;
+}
+
+
+.textImg {
+ display: flex;
+ justify-content: left;
+ margin-top: 18px;
+}
+
+section img {
+    height: 150px;
+    border-radius: 50%;
+    border: solid 3px var(--main-grey);
+}
+
+.illustration {
+    padding: 9px;
+   margin-left: 100px;
+ text-align: right;
+}
+
+.text {
+    display: block;
+    padding: 9px;
+    align-content: center;
+}
+
+.textImg p, .textSolo p {
+    text-align: justify;
+    margin-bottom: 6px;
+
+}
+
+span {
+    display: block;
+    text-align: justify;
+
+}
+
+.textSolo {
+    margin-top: 18px;
+    padding-right: 18px;
+    text-align: justify;
+}
+.textSolo:last-of-type{
+        margin-top: 0px;
+}
+
+ul{
+      margin: 0;
+}
+.noListStyle{
+    list-style-type: none;
+     padding-left: 0;
+   
+
+}
+
+
+/* MENU */
+
+aside:before {
+    /* A pseudo element is created before outer_cont that will display the background image and its position property is set to absolute */
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("img/nightV1.jpg");
+    opacity: var(--opacity);
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    .illustration{
+        height: 250px;
+        width: 250px;
+	    overflow: hidden; 
+        padding: 0;
+        border: solid 3px var(--main-grey);
+    }
+    .illustration img{
+        border: none;
+    }
+}
