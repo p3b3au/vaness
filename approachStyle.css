@@ -70,7 +70,7 @@ aside:before {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("img/Hockney.jpg");
+    background-image: url("img/approachV1.jpg");
     opacity: var(--opacity);
     width: 100%;
     height: inherit;
