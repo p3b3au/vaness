@@ -30,6 +30,7 @@ section img {
     padding: 9px;
    margin-left: 100px;
  text-align: right;
+ align-content: center;
 }
 
 .text {

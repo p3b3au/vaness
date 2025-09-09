@@ -3,9 +3,11 @@
 /* h */
 h4{
     font-weight: bold;
-    text-indent: 0;
+    text-indent: 1em;
 }
-
+h5{
+        text-indent: 1em;
+}
 
 /* LEFT */
 
@@ -55,11 +57,12 @@ border-radius: 1px;
 }
 
 .textSolo p{
-    text-indent: -9px;
+
     margin-top: 0;
 }
 
 .textImg p, .textSolo p {
+   text-indent: 1em;
     text-align: justify;
     margin-bottom: 6px;
 
@@ -71,9 +74,7 @@ border-radius: 1px;
     padding-right: 18px;
     text-align: justify;
 }
-.textSolo:last-of-type{
-        margin-top: 0px;
-}
+
 
 ul{
       margin: 0;
@@ -81,8 +82,27 @@ ul{
 .noListStyle{
     list-style-type: none;
      padding-left: 0;
-   
+}
 
+/* REVIEWS */
+.reviews p{
+        font-style: italic;
+        text-indent: 0;
+}
+.reviews .reviewer, .link{
+    text-align: right;
+}
+.link a{
+   color: black;
+    text-decoration: none;
+}
+
+.reviews > div{
+    margin-top: 24px;
+}
+
+.reviews span{
+    font-style: normal;
 }
 
 
