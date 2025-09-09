@@ -12,7 +12,7 @@
 
 :root {
     --main-white: whitesmoke;
-    --main-aside: rgb(217, 183, 96);
+    --main-aside: rgb(172, 176, 181);
     --main-blue: #45567d;
     --main-grey: #303841;
     --main-gold: yellow;
@@ -353,7 +353,8 @@ nav>a:hover:after {
     }
 
     .illustration {
-        width: auto
+        width: auto;
+
     }
 
     .hideResponsive {

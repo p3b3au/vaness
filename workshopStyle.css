@@ -100,7 +100,7 @@ aside:before {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .illustration{
         height: 250px;
         width: 250px;
@@ -111,4 +111,4 @@ aside:before {
     .illustration img{
         border: none;
     }
-}
+} */

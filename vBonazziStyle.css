@@ -96,7 +96,7 @@ ul{
 .reviews .reviewer, .link{
     text-align: right;
 }
-.link a{
+.reviews a{
    color: black;
     text-decoration: none;
 }
@@ -109,6 +109,10 @@ ul{
     font-style: normal;
 }
 
+.linkYoutube{
+    margin-bottom: 48px;
+    text-indent: 1em;
+}
 
 /* MENU */
 
@@ -131,7 +135,7 @@ aside:before {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .illustration{
         height: 250px;
         width: 250px;
@@ -142,7 +146,7 @@ aside:before {
     .illustration img{
         border: none;
     }
-}
+} */
 
 /* DARK MODE */
 
