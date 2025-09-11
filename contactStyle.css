@@ -1,0 +1,85 @@
+@import url(layoutStyle.css);
+
+
+
+/* LEFT */
+
+#left {
+    margin: 0px 0px 0px 12%;
+}
+
+h4{
+    text-indent: 0;
+    margin-bottom: 0px;
+}
+
+.textImg img {
+    height: 400px;
+    border-radius: 1%;
+    border: solid 3px var(--main-grey);
+}
+
+.illustration {
+    padding: 9px;
+    align-content: center;
+}
+
+.text {
+    padding: 9px;
+    align-content: center;
+}
+
+.text a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.textImg p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+
+
+.textSolo {
+    margin-top: 12px;
+    padding-right: 18px;
+    text-align: justify;
+}
+
+
+/* MENU */
+
+aside:before {
+    /* A pseudo element is created before outer_cont that will display the background image and its position property is set to absolute */
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("img/saraswatiV1.jpg");
+    opacity: var(--opacity);
+    width: 100%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    
+    .illustration{
+        height: 250px;
+        width: 250px;
+	    overflow: hidden; 
+        padding: 0;
+        border: solid 3px var(--main-grey);
+    }
+    .illustration img{
+        border: none;
+    }
+}

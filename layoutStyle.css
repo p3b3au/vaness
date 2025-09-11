@@ -1,6 +1,4 @@
-
-
-#links{
+#links {
     display: none
 }
 
@@ -11,7 +9,7 @@
 /* GENERALITE */
 
 :root {
-    --main-white: whitesmoke;
+    --main-white: rgb(252, 252, 243);
     --main-aside: rgb(172, 176, 181);
     --main-blue: #45567d;
     --main-grey: #303841;
@@ -43,6 +41,7 @@ body {
     color: black;
     font-size: 20px;
     font-family: "MyPerpetua";
+    background-color: var(--main-white);
 }
 
 main {
@@ -51,7 +50,7 @@ main {
 
 header {
     margin-left: 9%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
 }
 
@@ -71,18 +70,26 @@ header {
 h1, h2 {
     font-family: "MyPapyrus";
     font-weight: bold;
-    margin-bottom: 45px;
+
+}
+
+h1 {
+    margin-bottom: 12px;
+
 }
 
 h2 {
-    text-align: center;
-    font-size: 1.17em;
+
+    font-size: 1.37em;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
-h3{
+h3 {
     padding-top: 12px;
     font-size: 26px;
     font-weight: normal;
+    padding-left: 9px;
 }
 
 h4 {
@@ -91,6 +98,7 @@ h4 {
     text-indent: 1em;
     margin: 0 0 6px 0;
 }
+
 h5 {
     font-weight: normal;
     font-size: 20px;
@@ -98,7 +106,7 @@ h5 {
     text-decoration: underline;
 }
 
-p{
+p {
     margin-top: 9px;
 }
 
@@ -107,6 +115,11 @@ p{
 
 }
 
+.textImg {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 51px;
+}
 
 
 /* CITATION */
@@ -132,7 +145,7 @@ footer {
     margin-top: 72px;
 }
 
-footer a {
+footer a, .date a {
     color: black;
     text-decoration: none;
 
@@ -143,12 +156,12 @@ footer a {
     margin-bottom: 12px;
 }
 
-#footerSeparator img{
+#footerSeparator img {
     height: 1px;
     width: 80%;
 }
 
-footer img{
+footer img {
     width: 13px;
 }
 
@@ -168,7 +181,10 @@ aside {
     top: 0;
     align-content: center;
     padding-right: 45px;
+}
 
+main {
+    width: 79%;
 }
 
 aside:before {
@@ -193,7 +209,7 @@ nav>* {
 }
 
 #separator {
-    width: 5px;
+    width: 2px;
     background-image: url(img/sepArbreVertic.jpg);
     background-size: cover;
     overflow: hidden;
@@ -323,7 +339,7 @@ nav>a:hover:after {
     #menuBurger {
         background-color: #434343;
     }
-    
+
 }
 
 @media (prefers-color-scheme: light) {}
@@ -336,12 +352,12 @@ nav>a:hover:after {
         display: none;
     }
 
-    #burger {
-        display: block;
+    main {
+        width: 100%;
     }
 
-    body {
-        margin: 2px;
+    #burger {
+        display: block;
     }
 
     #left {

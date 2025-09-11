@@ -60,6 +60,10 @@ border-radius: 1px;
     align-content: start;
 }
 
+.textImg{
+    display: block;
+}
+
 .textSolo p{
 
     margin-top: 0;
@@ -135,18 +139,22 @@ aside:before {
 
 /* RESPONSIVE */
 
-/* @media screen and (max-width: 900px) {
-    .illustration{
+@media screen and (max-width: 900px) {
+    /* .illustration{
         height: 250px;
         width: 250px;
 	    overflow: hidden; 
         padding: 0;
         border: solid 3px var(--main-grey);
-    }
+    } */
     .illustration img{
         border: none;
+        width: 100%;
+    } 
+    .textSolo{
+        padding: 0px;
     }
-} */
+}
 
 /* DARK MODE */
 
