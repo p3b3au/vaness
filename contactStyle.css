@@ -8,7 +8,7 @@
     margin: 0px 0px 0px 12%;
 }
 
-h4{
+h4 {
     text-indent: 0;
     margin-bottom: 0px;
 }
@@ -71,15 +71,16 @@ aside:before {
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
-    
-    .illustration{
-        height: 250px;
-        width: 250px;
-	    overflow: hidden; 
+
+    .illustration {
         padding: 0;
-        border: solid 3px var(--main-grey);
+        margin-top: 24px;
+        text-align: center;
     }
-    .illustration img{
-        border: none;
+
+    .illustration img {
+        border: solid 3px var(--main-grey);
+        width: 70%;
+        height: auto;
     }
 }

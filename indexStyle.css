@@ -1,46 +1,122 @@
-@import url(layoutStyle.css);
+/* GENERALITE */
 
+:root {
+    --main-white: rgb(252, 252, 243);
+    --main-aside: rgb(172, 176, 181);
+    --main-blue: #45567d;
+    --main-grey: #303841;
+    --main-gold: yellow;
+    --opacity: 0.2
+}
 
-
-/* LEFT */
-
-#left {
-    margin: 0px 0px 0px 12%;
+@font-face {
+    font-family: "MyPerpetua";
+    src: url(font/perpetua.ttf);
 }
 
 
-.textImg img {
-    height: 300px;
-    border-radius: 1%;
-    border: solid 3px var(--main-grey);
-}
-
-.illustration {
-    padding: 9px;
-    align-content: center;
-}
-
-.text {
-    padding: 9px;
-    align-content: center;
-}
-
-.textImg p {
-    text-align: justify;
-    text-indent: 1em;
-}
-
-.textImg span {
-    display: block;
-    text-align: justify;
-    text-indent: 1em;
-}
-
-.textSolo {
-    text-indent: 1em;
-    margin-top: 72px;
-    padding-right: 18px;
-    text-align: justify;
+@font-face {
+    font-family: "MyPapyrus";
+    src: url(font/papyrus.ttf);
 }
 
 
+
+/* LAYOUT */
+
+
+
+body {
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    font-family: "MyPerpetua";
+    background-image: url(/img/ind2.jpg);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+#banner {
+    margin-left: 160px;
+    display: flex;
+}
+
+#enter {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-family: "MyPerpetua";
+    font-size: 27px;
+}
+
+
+button:hover {
+    background-color: var(--main-grey);
+    color: var(--main-white);
+    cursor: pointer;
+}
+
+/* H */
+
+h1, h2, h3 {
+    font-family: "MyPapyrus";
+    font-weight: bold;
+    color: var(--main-white);
+}
+
+h1 {
+    margin-bottom: 12px;
+}
+
+h2{
+    margin-bottom: 12px;
+}
+
+h2, h3{
+    font-size: 1.37em;
+    margin-top: 0px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    body{
+        padding: 2px;
+    }
+    main {
+        width: 100%;
+    }
+
+  
+
+    #banner {
+        justify-content: center;
+        margin: 0px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+  
+}

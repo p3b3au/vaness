@@ -1,0 +1,46 @@
+@import url(layoutStyle.css);
+
+
+
+/* LEFT */
+
+#left {
+    margin: 0px 0px 0px 12%;
+}
+
+
+.textImg img {
+    height: 300px;
+    border-radius: 1%;
+    border: solid 3px var(--main-grey);
+}
+
+.illustration {
+    padding: 9px;
+    align-content: center;
+}
+
+.text {
+    padding: 9px;
+    align-content: center;
+}
+
+.textImg p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.textImg span {
+    display: block;
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.textSolo {
+    text-indent: 1em;
+    margin-top: 72px;
+    padding-right: 18px;
+    text-align: justify;
+}
+
+
