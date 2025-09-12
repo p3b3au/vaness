@@ -25,35 +25,6 @@ width:98%;
 margin : 12px 0px 24px 0px;
 }
 
-
-/* .illustration {
-    border: none;
-background-image: url(img/whitebranchH3.jpg);
-height: 100px;
-background-position: center;
-display: block;
-align-items: center;
-border-radius: 1px;
-
-#svg1 {
-    height:20%;
-    width: 100%;
-    .main {
-      fill: var(--main-white);
-    }
-}
-#svg2 {
-    height:20%;
-    width: 100%;
-    .main {
-      fill: var(--main-white)
-    }
-  }
-}
-.imgSvgmax{
-    height: 53%;
-} */
-
 .text {
     display: block;
     padding: 9px;
@@ -140,37 +111,14 @@ aside:before {
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
-    /* .illustration{
-        height: 250px;
-        width: 250px;
-	    overflow: hidden; 
-        padding: 0;
-        border: solid 3px var(--main-grey);
-    } */
     .illustration img{
         border: none;
-        width: 100%;
+
     } 
-    .textSolo{
+    .textSolo {
         padding: 0px;
     }
+
 }
 
-/* DARK MODE */
 
-@media (prefers-color-scheme: dark) {
-     .illustration {
-#svg1 {
-    .main {
-      fill: #333;
-    }
-}
-#svg2 {
-    .main {
-      fill: #333;
-    }
-  }
-     }
-}
-
-@media (prefers-color-scheme: light) {}
