@@ -141,9 +141,35 @@ p {
 
 /* FOOTER */
 
+#top {
+    display: none;
+    text-align: center;
+}
+
+#top a {
+    padding: 6px 8px 6px 8px;
+    color: var(--main-grey) !important;
+    background-color: var(--main-white);
+    text-decoration: none;
+    font-weight: bolder;
+    border: var(--main-grey) solid 1px;
+    border-radius: 50%;
+}
+
 footer {
     margin-top: 72px;
 }
+
+
+
+#cookies {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    /* text-align: left;     */
+    width: 80%;
+    margin: auto;
+}
+
 
 footer a, .date a {
     color: black;
@@ -406,4 +432,10 @@ nav>a:hover:after {
         margin-bottom: 8px;
     }
 
+    #top {
+        display: block
+    }
+    #cookies{
+        width: 100%;
+    }
 }

@@ -2,7 +2,7 @@
 
 
 /* H */
-h4{
+h4 {
     text-decoration: underline;
     margin-bottom: 0;
 }
@@ -31,7 +31,7 @@ h4{
 }
 
 .text {
-width: inherit;
+    width: inherit;
     padding: 9px;
     align-content: center;
 }
@@ -49,7 +49,7 @@ width: inherit;
     text-align: justify;
 }
 
-.textSolo p{
+.textSolo p {
     padding-left: 1em;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -80,14 +80,15 @@ aside:before {
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
-    .illustration{
+    .illustration {
         height: 250px;
         width: 250px;
-	    overflow: hidden; 
+        overflow: hidden;
         padding: 0;
-        border: solid 3px var(--main-grey);
-    }
-    .illustration img{
         border: none;
+    }
+
+    .illustration img {
+        border: solid 3px var(--main-grey);
     }
 }
