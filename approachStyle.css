@@ -81,14 +81,12 @@ aside:before {
 
 @media screen and (max-width: 900px) {
     .illustration {
-        height: 250px;
-        width: 250px;
         overflow: hidden;
-        padding: 0;
-        border: none;
     }
 
     .illustration img {
         border: solid 3px var(--main-grey);
+        height: 250px;
+        width: 250px;
     }
 }
