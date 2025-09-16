@@ -68,7 +68,7 @@ ul{
         font-style: italic;
         text-indent: 0;
 }
-.reviews .reviewer, .link{
+.reviewer, .link{
     text-align: right;
 }
 .reviews a{

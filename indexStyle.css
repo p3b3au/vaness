@@ -28,7 +28,7 @@
 
 body {
     margin: 0;
-    color: black;
+    color: var(--main-white);
     font-size: 20px;
     font-family: "MyPerpetua";
     background-image: url(/img/ind2.jpg);
@@ -96,10 +96,6 @@ h2, h3{
 a{
         text-decoration: none;
 }
-
-
-
-
 
 /* RESPONSIVE */
 
