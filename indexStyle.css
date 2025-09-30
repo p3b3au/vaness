@@ -84,26 +84,26 @@ h1 {
     margin-bottom: 12px;
 }
 
-h2{
+h2 {
     margin-bottom: 12px;
 }
 
-h2, h3{
+h2, h3 {
     font-size: 1.37em;
     margin-top: 0px;
 }
 
-a{
-        text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
-    body{
+    body {
         padding: 2px;
     }
-    
+
     main {
         width: 100%;
     }
@@ -117,6 +117,4 @@ a{
         text-align: center;
         margin-bottom: 18px;
     }
-
-  
 }

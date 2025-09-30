@@ -167,7 +167,6 @@ footer {
 }
 
 
-
 #cookies {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 12px;
@@ -407,7 +406,7 @@ nav>a:hover:after {
         margin: 0 !important;
     }
 
-    #page, .textImg, #banner, footer {
+    #page, .textImg, .textImgProfil, #banner, footer {
         flex-wrap: wrap;
     }
 
@@ -436,9 +435,10 @@ nav>a:hover:after {
         justify-content: center;
     }
 
-    h1 {
+    h1, .pseudoH1 {
         text-align: center;
     }
+ 
 
     #logo img {
         margin: 0;
