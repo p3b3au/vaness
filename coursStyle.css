@@ -113,4 +113,8 @@ aside:before {
     .illustration img{
         border: solid 3px var(--main-grey);
     }
+
+    span{
+        text-align: left;
+    }
 }

@@ -83,4 +83,8 @@ aside:before {
         width: 70%;
         height: auto;
     }
+    .textSolo p {
+    text-align: left;
+
+}
 }
