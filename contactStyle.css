@@ -58,7 +58,7 @@ aside:before {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("img/saraswatiV1.jpg");
+    background-image: url("img/saraswati.jpg");
     opacity: var(--opacity);
     width: 100%;
     height: inherit;

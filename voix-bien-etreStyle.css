@@ -1,10 +1,11 @@
 @import url(layoutStyle.css);
 
 /* h */
-h2{
+h2 {
     font-weight: bold;
     text-indent: 0;
 }
+
 
 
 /* LEFT */
@@ -23,7 +24,7 @@ section img {
 .illustration {
     padding: 9px;
     margin: 36px;
- text-align: center;
+    text-align: center;
 }
 
 .text {
@@ -35,7 +36,7 @@ section img {
 .textImg p, .textSolo p {
     text-align: justify;
     margin-bottom: 6px;
-
+    text-indent: 1em;
 }
 
 span {
@@ -50,17 +51,19 @@ span {
     padding-right: 18px;
     text-align: justify;
 }
-.textSolo:last-of-type{
-        margin-top: 0px;
+
+.textSolo:last-of-type {
+    margin-top: 0px;
 }
 
-ul{
-      margin: 0;
+ul {
+    margin: 0;
 }
-.noListStyle{
+
+.noListStyle {
     list-style-type: none;
-     padding-left: 0;
-   
+    padding-left: 0;
+
 
 }
 
