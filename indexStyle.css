@@ -88,9 +88,13 @@ h2 {
     margin-bottom: 12px;
 }
 
-h2, h3 {
+h2  {
     font-size: 1.37em;
     margin-top: 0px;
+}
+
+h3{
+    font-size: 1.25em;
 }
 
 a {
