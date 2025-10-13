@@ -40,7 +40,7 @@ body {
     margin: 0;
     color: black;
     font-size: 20px;
-    font-family: "MyPerpetua";
+    font-family: "MyPerpetua", serif;
     background-color: var(--main-white);
 }
 
@@ -68,7 +68,7 @@ header {
 /* H */
 
 .pseudoH1, .pseudoH2 {
-    font-family: "MyPapyrus";
+    font-family: "MyPapyrus", serif;
     font-weight: bold;
 
 }
