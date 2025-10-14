@@ -22,6 +22,7 @@ h3{
 .textImg img{
 width:98%;
 margin : 12px 0px 24px 0px;
+/* border: none; */
 }
 
 .text {
@@ -112,12 +113,16 @@ aside:before {
 @media screen and (max-width: 900px) {
     .illustration img{
         border: none;
-
     } 
     .textSolo {
         padding: 0px;
     }
-
 }
 
+/* DARK MODE */
 
+@media (prefers-color-scheme: dark) {
+  .textImg img{
+border: none;
+}
+}

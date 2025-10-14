@@ -13,6 +13,7 @@
     --main-aside: rgb(172, 176, 181);
     --main-blue: #45567d;
     --main-grey: #303841;
+    --main-frame: #4f5867;
     --main-gold: yellow;
     --opacity: 0.2
 }
@@ -137,6 +138,10 @@ p {
     display: flex;
     justify-content: space-around;
     margin-top: 51px;
+}
+
+.textImg img, section img{
+        border: solid 2px var(--main-frame);
 }
 
 .showResponsive {

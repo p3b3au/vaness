@@ -1,6 +1,10 @@
 @import url(layoutStyle.css);
 
 /* h */
+a{
+    color: black;
+}
+
 h2{
     font-weight: bold;
     text-indent: 0;
@@ -19,15 +23,14 @@ h2{
 
 section img {
     height: 250px;
-    border-radius: 50%;
-    border: solid 3px var(--main-grey);
+
 }
 
 
 .illustration {
     padding: 9px;
-   margin-left: 50px;
-   margin-right: 100px;
+   /* margin-left: 50px;
+   margin-right: 50px; */
  text-align: right;
  align-content: center;
 }
@@ -51,7 +54,8 @@ span {
 
 .textImg{
     justify-content: space-between;
-    margin-bottom: 51px;
+    margin-bottom: 66px;
+   padding-right: 30px;
 }
 .textImg .text{
         align-content:start;
@@ -75,8 +79,9 @@ ul{
 .noListStyle{
     list-style-type: none;
      padding-left: 0;
-   
-
+}
+.noPaddingStyle{
+         padding-left: 20px;
 }
 
 
@@ -89,7 +94,7 @@ aside:before {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("img/workshopV1.jpg");
+    background-image: url("img/coursV2.jpeg");
     opacity: var(--opacity);
     width: 100%;
     height: inherit;
@@ -113,6 +118,12 @@ aside:before {
     }
     .illustration img{
         border: solid 3px var(--main-grey);
+        margin-top: 36px;
+        margin-bottom: 0px;
+    }
+
+    .textImg{
+        margin-bottom: 51px;
     }
 
     span{

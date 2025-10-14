@@ -16,7 +16,6 @@ h2 {
 .textImg img {
     height: 400px;
     border-radius: 1%;
-    border: solid 3px var(--main-grey);
 }
 
 .illustration {
