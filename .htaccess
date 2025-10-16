@@ -1,4 +1,6 @@
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteCond %{REQUEST_URI} !
-RewriteRule ^(.*)$ https://www.compagnonnagevocal.fr/$1 [R=301,L]
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} !www\.compagnonnagevocal\.fr$ [NC]
+RewriteRule ^ https://www.compagnonnagevocal.fr%{REQUEST_URI} [R=301,L,NE,QSA]

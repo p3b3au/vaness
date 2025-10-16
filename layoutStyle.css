@@ -148,6 +148,10 @@ p {
     display: none
 }
 
+.italique{
+    font-style: italic;
+}
+
 
 /* CITATION */
 .quotation {
@@ -310,9 +314,7 @@ nav>a::after {
     background: url(img/sepArbreHoriz.jpg);
 }
 
-/* [aria-current] {
-    font-weight: bold;
-} */
+
 
 /* HOVER */
 
@@ -431,10 +433,9 @@ nav>a:hover:after {
         flex-wrap: wrap;
     }
 
-    .illustration {
+    /* .illustration {
         width: auto;
-
-    }
+    } */
 
     .hideResponsive {
         display: none;
