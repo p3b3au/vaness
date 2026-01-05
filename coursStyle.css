@@ -4,6 +4,9 @@
 a{
     color: black;
 }
+h1 a{
+    text-decoration: none;
+}
 
 h2{
     font-weight: bold;
@@ -49,11 +52,6 @@ section img {
 span {
     display: block;
     text-align: justify;
-}
-
-.arrhes{
-    margin-top: 15px;
-    font-size: 17px;
 }
 
 .textImg{
@@ -117,8 +115,10 @@ aside:before {
         padding: 0;
         margin: auto;
         text-align: center;
+    }
 
-     
+    h1 a{
+        text-decoration: underline;
     }
     .illustration img{
         border: solid 3px var(--main-grey);
