@@ -23,7 +23,6 @@ section img {
 .illustration {
     padding: 9px;
     margin: 24px;
-    text-align: center;
 }
 
 .text {
@@ -103,13 +102,16 @@ aside:before {
 /* RESPONSIVE */
 
 @media screen and (max-width: 900px) {
-    /* .illustration{
-	    overflow: hidden; 
+        .illustration {
         padding: 0;
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .illustration img {
         border: solid 3px var(--main-grey);
-    } */
-    .illustration img{
-        border: none;
+        width: 70%;
+        height: auto;
     }
 
 }
