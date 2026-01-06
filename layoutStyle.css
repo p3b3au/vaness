@@ -434,6 +434,10 @@ nav>a:hover:after {
         flex-wrap: wrap;
     }
 
+    .pseudoH2{
+        text-align: center;
+    }
+
     /* .illustration {
         width: auto;
     } */
@@ -485,6 +489,11 @@ nav>a:hover:after {
     }
 
     #cookies {
-        width: 100%;
+
+        padding: 9px;
+    }
+    #footerContacts{
+        display: block;
+        text-align: center;
     }
 }
