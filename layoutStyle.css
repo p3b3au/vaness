@@ -1,6 +1,6 @@
-#links {
+/* #links {
     display: none
-}
+} */
 
 /* guillemets 
 «&nbsp;
@@ -239,6 +239,9 @@ footer img {
     justify-content: space-around;
     margin: 27px;
 }
+#footerContacts div {
+    text-align: center;
+}
 
 
 /*  menu à droite  */
@@ -286,6 +289,10 @@ nav>* {
 #links {
     margin-top: 72px;
     font-size: 18px;
+}
+
+#links img{
+    width: 27px;
 }
 
 
@@ -398,7 +405,7 @@ nav>a:hover:after {
         color: white !important;
     }
 
-    #burger img, #footerContacts img, #separator, #footerSeparator, nav>a:hover:after, [aria-current]::after {
+    #burger img, #footerContacts img, #separator, #links img, #footerSeparator, nav>a:hover:after, [aria-current]::after {
         filter: invert(0.6);
     }
 
@@ -437,10 +444,6 @@ nav>a:hover:after {
     .pseudoH2{
         text-align: center;
     }
-
-    /* .illustration {
-        width: auto;
-    } */
 
     .hideResponsive {
         display: none;
