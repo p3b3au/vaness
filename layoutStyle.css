@@ -89,7 +89,8 @@ header {
 .specialH2 {
     padding-left: 9px;
 }
-.specialH1{
+
+.specialH1 {
     padding-top: 12px;
     font-size: 26px;
     font-weight: normal;
@@ -126,7 +127,7 @@ p {
     margin-top: 9px;
 }
 
-.noIndent{
+.noIndent {
     text-indent: 0px !important;
 }
 
@@ -141,15 +142,15 @@ p {
     margin-top: 51px;
 }
 
-.textImg img, section img{
-        border: solid 2px var(--main-frame);
+.textImg img, section img {
+    border: solid 2px var(--main-frame);
 }
 
 .showResponsive {
     display: none
 }
 
-.italique{
+.italique {
     font-style: italic;
 }
 
@@ -207,6 +208,7 @@ footer {
 #cookies p {
     margin-block-end: 0.1em;
 }
+
 #cookies p:first-of-type {
     font-size: 15px;
     font-weight: bold;
@@ -239,6 +241,7 @@ footer img {
     justify-content: space-around;
     margin: 27px;
 }
+
 #footerContacts div {
     text-align: center;
 }
@@ -291,7 +294,7 @@ nav>* {
     font-size: 18px;
 }
 
-#links img{
+#links img {
     width: 27px;
 }
 
@@ -352,7 +355,7 @@ nav>a:hover:after {
     color: black;
 }
 
-#burger img {
+#burger>a>img, #close>img {
     font-size: 1.5em;
     width: 39px;
 }
@@ -405,98 +408,106 @@ nav>a:hover:after {
         color: white !important;
     }
 
-    #burger img, #footerContacts img, #separator, #links img, #footerSeparator, nav>a:hover:after, [aria-current]::after {
+    #burger img, #footerContacts img, #separator, #footerSeparator, nav>a:hover:after, [aria-current]::after {
         filter: invert(0.6);
     }
 
-    #menuBurger {
-        background-color: #434343;
+    #links img, [aria-current]::after {
+        filter: invert(0.83);
+
     }
 
-}
+        #menuBurger {
+            background-color: #434343;
+        }
 
-@media (prefers-color-scheme: light) {}
-
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 900px) {
-    aside {
-        display: none;
     }
 
-    main {
-        width: 100%;
-    }
+    @media (prefers-color-scheme: light) {}
 
-    #burger {
-        display: block;
-    }
 
-    #left {
-        margin: 0 !important;
-    }
+    /* RESPONSIVE */
 
-    #page, .textImg, .textImgProfil, #banner, footer {
-        flex-wrap: wrap;
-    }
+    @media screen and (max-width: 900px) {
+        aside {
+            display: none;
+        }
 
-    .pseudoH2{
-        text-align: center;
-    }
+        main {
+            width: 100%;
+        }
 
-    .hideResponsive {
-        display: none;
-    }
+        #burger {
+            display: block;
+        }
 
-    .showResponsive {
-        display: block;
-    }
+        #left {
+            margin: 0 !important;
+        }
 
-    .text {
-        padding: 0px;
-    }
+        #page, .textImg, .textImgProfil, #banner, footer {
+            flex-wrap: wrap;
+        }
 
-    header {
-        margin: 0;
-    }
+        .pseudoH2 {
+            text-align: center;
+        }
 
-    #banner {
-        justify-content: center;
-    }
+        .hideResponsive {
+            display: none;
+        }
 
-    h1, .pseudoH1 {
-        text-align: center;
-    }
- 
+        .showResponsive {
+            display: block;
+        }
 
-    #logo img {
-        margin: 0;
-    }
+        .text {
+            padding: 0px;
+        }
 
-    .textImg {
-        justify-content: center;
-        margin: 0;
-    }
+        header {
+            margin: 0;
+        }
 
-    .textSolo{
-        padding: 0 !important
-    }
+        #banner {
+            justify-content: center;
+        }
 
-    footer a {
-        margin-bottom: 8px;
-    }
+        h1, .pseudoH1 {
+            text-align: center;
+        }
 
-    #top {
-        display: block
-    }
 
-    #cookies {
+        #logo img {
+            margin: 0;
+        }
 
-        padding: 9px;
+        .textImg {
+            justify-content: center;
+            margin: 0;
+        }
+
+        .textSolo {
+            padding: 0 !important
+        }
+
+        footer a {
+            margin-bottom: 8px;
+        }
+
+        #top {
+            display: block
+        }
+
+        #cookies {
+
+            padding: 9px;
+        }
+
+        #footerContacts {
+            display: block;
+            text-align: center;
+        }
+
+
     }
-    #footerContacts{
-        display: block;
-        text-align: center;
-    }
-}
