@@ -295,7 +295,7 @@ nav>* {
 }
 
 #links img {
-    width: 27px;
+    width: 25px;
 }
 
 
@@ -413,7 +413,7 @@ nav>a:hover:after {
     }
 
     #links img, [aria-current]::after {
-        filter: invert(0.83);
+        filter: invert(0.9);
 
     }
 
