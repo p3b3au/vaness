@@ -1,0 +1,13 @@
+@import url(contactStyle.css);
+
+
+.textSolo ul{
+    margin-top: -12px ;
+    text-align: left;
+}
+
+   .textSolo p {
+    text-align:justify;
+
+}
+
