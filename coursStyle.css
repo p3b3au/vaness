@@ -51,7 +51,7 @@ section img {
 
 span {
     display: block;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .textImg{

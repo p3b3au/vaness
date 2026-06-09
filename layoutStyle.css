@@ -10,7 +10,7 @@
 
 :root {
     --main-white: rgb(252, 252, 243);
-    --main-aside: rgb(172, 176, 181);
+    --main-aside:  rgb(206, 204, 208);
     --main-blue: #45567d;
     --main-grey: #303841;
     --main-frame: #4f5867;
@@ -155,6 +155,8 @@ p {
 }
 
 
+
+
 /* CITATION */
 .quotation {
     text-indent: 1em;
@@ -172,7 +174,7 @@ p {
     font-weight: bold;
 }
 
-.diamond{
+.diamond {
     margin-top: 21px;
     margin-bottom: 21px;
     text-align: center;
@@ -221,10 +223,11 @@ footer {
     font-size: 15px;
     font-weight: bold;
 }
- #cookies a{
+
+#cookies a {
     font-weight: bold;
-     font-size: 14px;
- }
+    font-size: 14px;
+}
 
 
 footer a, .date a {
@@ -495,7 +498,6 @@ nav>a:hover:after {
         text-align: center;
     }
 
-
     #logo img {
         margin: 0;
     }
@@ -531,4 +533,15 @@ nav>a:hover:after {
         margin-top: 72px;
     }
 
+    /* CADRE */
+ 
+    header, footer {
+        background-color: var(--main-aside);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        header, footer {
+        background-color: rgb(32, 32, 32)
+    }
+    }
 }
