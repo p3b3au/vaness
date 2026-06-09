@@ -533,15 +533,4 @@ nav>a:hover:after {
         margin-top: 72px;
     }
 
-    /* CADRE */
- 
-    header, footer {
-        background-color: var(--main-aside);
-    }
-
-    @media (prefers-color-scheme: dark) {
-        header, footer {
-        background-color: rgb(32, 32, 32)
-    }
-    }
 }
